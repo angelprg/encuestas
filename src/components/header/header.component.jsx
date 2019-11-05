@@ -5,7 +5,7 @@ import "./header.styles.scss";
 const Header = () => {
   return (
     <header>
-      <img id="logosw" src="/assets/img/logo-sw.png" alt="Logo SportsWorld" />{" "}
+      <img id="logosw" src="/encuestas/assets/img/logo-sw.png" alt="Logo SportsWorld" />{" "}
       <span id="gymit">#GYMIT</span>
     </header>
   );
