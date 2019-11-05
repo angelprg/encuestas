@@ -1,7 +1,8 @@
-$base:100;
-$delay:100;
+$base:50;
+$delay:600;
+$scale: 1.3;
 
-#star-icon {
+.star-icon {
   margin: 5px 20px;
   width: 75px;
   height: 75px;
@@ -13,31 +14,43 @@ $delay:100;
 
 
   &.n_1 {
+    animation-name: starActive;
     animation-delay: 0ms;
-    animation-duration: $base*20+ms;
+    animation-duration: $delay+ms;
+    //animation-duration: $base*20+ms;
   }
 
   &.n_2 {
+    animation-name: starActive;
     animation-delay: $base*1+ms;
-    animation-duration: $base*19+ms;
+    animation-duration: $delay+ms;
+    //animation-duration: $base*19+ms;
   }
 
   &.n_3 {
+    animation-name: starActive;
     animation-delay: $base*2+ms;
-    animation-duration: $base*18+ms;
+    animation-duration: $delay+ms;
+    //animation-duration: $base*18+ms;
+    
   }
 
   &.n_4 {
+    animation-name: starActive;
     animation-delay: $base*3+ms;
-    animation-duration: $base*17+ms;
+    animation-duration: $delay+ms;
+    //animation-duration: $base*17+ms;
+    
   }
 
   &.n_5 {
+    animation-name: starActive;
     animation-delay: $base*4+ms;
-    animation-duration: $base*16+ms;
+    animation-duration: $delay+ms;
+    //animation-duration: $base*16+ms;
   }
 
-  animation-name: starActive;
+  
 
 }
 
@@ -50,12 +63,17 @@ $delay:100;
   15% {
     stroke: #E30613;
     fill-opacity: 1;
+    //transform: scale($scale);
     ;
+  }
+  50% {
+    transform: scale($scale);
   }
 
   85% {
     stroke: #E30613;
     fill-opacity: 1;
+    //transform: scale($scale*1.3);
     ;
   }
 

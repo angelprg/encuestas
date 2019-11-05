@@ -2,8 +2,8 @@ import React from "react";
 
 import "./star-icon.scss";
 
-const StarIcon = ({ className }) => (
-  <svg id="star-icon" className={className}>
+const StarIcon = ({ classes, handleAnimationEnd }) => 
+  <svg className={`star-icon ${classes}`} onAnimationEnd={handleAnimationEnd}>
     <defs>
       <filter
         id="dropShadow"
@@ -41,7 +41,6 @@ const StarIcon = ({ className }) => (
       filter="url(#dropShadow)"
       transform="translate(-348 3)"
     />
-  </svg>
-);
+  </svg>;
 
 export default StarIcon;

@@ -18,25 +18,35 @@ class Rating extends React.Component {
         { _id: 4, question: "¿Cuál es tu opinión general?", selected: null },
         { _id: 5, question: "¿Qué piensas de Sports World?", selected: null }
       ],
-      current: 0
+      current: 0,
+      lastRating: 5
     };
+  }
+
+  submitRates = () =>{
+    console.log('To Submit: ',this.state);
   }
 
   saveSelected = selected => {
     this.setState(prevState => {
-      const newQuestions = { ...this.state.questions };
-      newQuestions[this.state.current].selected = selected;
-      return { questions: newQuestions };
+      const newQuestions = [ ...prevState.questions ];
+      newQuestions[prevState.current].selected = selected;
+      return { questions: newQuestions, current: prevState.current + 1 };
     });
   };
+  clearSelected = () =>{
+    this.setState(prevState =>{
+      const newQuestions = prevState.questions.map(q => ({...q,selected:null}))
+      return {questions:newQuestions, current:0}
+    })
+  }
 
   handleRatingClick = selected => {
+    this.saveSelected(selected);
     if (this.state.current === this.state.questions.length - 1) {
       this.submitRates();
-    } else {
-      console.log("next question");
-      this.setState(curState => ({ current: curState.current + 1 }));
-    }
+      this.clearSelected();
+    } 
   };
   render() {
     const { questions, current } = this.state;
@@ -45,7 +55,7 @@ class Rating extends React.Component {
         <div className="question">{questions[current].question}</div>
         <RatingButtons
           current={this.state.current}
-          onRatingClick={this.handleRatingClick}
+          handleRatingClick={this.handleRatingClick}
         />
       </div>
     );
