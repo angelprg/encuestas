@@ -1,0 +1,66 @@
+$base:100;
+$delay:100;
+
+#star-icon {
+  margin: 5px 20px;
+  width: 75px;
+  height: 75px;
+
+  stroke-width: 5px;
+  stroke: #FFF;
+  fill: #E30613;
+  fill-opacity: 0;
+
+
+  &.n_1 {
+    animation-delay: 0ms;
+    animation-duration: $base*20+ms;
+  }
+
+  &.n_2 {
+    animation-delay: $base*1+ms;
+    animation-duration: $base*19+ms;
+  }
+
+  &.n_3 {
+    animation-delay: $base*2+ms;
+    animation-duration: $base*18+ms;
+  }
+
+  &.n_4 {
+    animation-delay: $base*3+ms;
+    animation-duration: $base*17+ms;
+  }
+
+  &.n_5 {
+    animation-delay: $base*4+ms;
+    animation-duration: $base*16+ms;
+  }
+
+  animation-name: starActive;
+
+}
+
+@keyframes starActive {
+  0% {
+    stroke: #FFF;
+    fill-opacity: 0;
+  }
+
+  15% {
+    stroke: #E30613;
+    fill-opacity: 1;
+    ;
+  }
+
+  85% {
+    stroke: #E30613;
+    fill-opacity: 1;
+    ;
+  }
+
+  100% {
+    stroke: #FFF;
+    fill-opacity: 0;
+  }
+}
