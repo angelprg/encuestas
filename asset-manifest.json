@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/encuestas/static/css/main.2c0f31ed.chunk.css",
-    "main.js": "/encuestas/static/js/main.d298c83a.chunk.js",
-    "main.js.map": "/encuestas/static/js/main.d298c83a.chunk.js.map",
+    "main.css": "/encuestas/static/css/main.87d98c3e.chunk.css",
+    "main.js": "/encuestas/static/js/main.5d4b3b75.chunk.js",
+    "main.js.map": "/encuestas/static/js/main.5d4b3b75.chunk.js.map",
     "runtime-main.js": "/encuestas/static/js/runtime-main.955c129f.js",
     "runtime-main.js.map": "/encuestas/static/js/runtime-main.955c129f.js.map",
     "static/js/2.a7d59d75.chunk.js": "/encuestas/static/js/2.a7d59d75.chunk.js",
     "static/js/2.a7d59d75.chunk.js.map": "/encuestas/static/js/2.a7d59d75.chunk.js.map",
     "index.html": "/encuestas/index.html",
-    "precache-manifest.d21280b624b7eeceed207650654dc5e8.js": "/encuestas/precache-manifest.d21280b624b7eeceed207650654dc5e8.js",
+    "precache-manifest.1f5b71b723efcc1d17b3a79434dbc03f.js": "/encuestas/precache-manifest.1f5b71b723efcc1d17b3a79434dbc03f.js",
     "service-worker.js": "/encuestas/service-worker.js",
-    "static/css/main.2c0f31ed.chunk.css.map": "/encuestas/static/css/main.2c0f31ed.chunk.css.map"
+    "static/css/main.87d98c3e.chunk.css.map": "/encuestas/static/css/main.87d98c3e.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.955c129f.js",
     "static/js/2.a7d59d75.chunk.js",
-    "static/css/main.2c0f31ed.chunk.css",
-    "static/js/main.d298c83a.chunk.js"
+    "static/css/main.87d98c3e.chunk.css",
+    "static/js/main.5d4b3b75.chunk.js"
   ]
 }
