@@ -44,7 +44,6 @@ constructor(props){
     return (
       <div className="rating-buttons">
         {this.state.buttons.map(i => {
-          console.log(i);
           return (
             <div key={i._id}  onClick={() => this.onRatingClick(i._id)}>
               <StarIcon classes={i.classes} handleAnimationEnd={()=>this.handleAnimationEnd(i._id)}/>

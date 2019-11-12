@@ -2,6 +2,8 @@
   flex: 1 0 auto;
   width: 80%;
   margin: 10px auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 
   .question {
     font-size: 3rem;
